@@ -62,7 +62,31 @@ public class ExemploStringBuilder {
     }
 
     private void exemplosInsert() {
-        //  Mykaeli
+        // O método Insert permite adicionar na posição que você escolher a partir de 0.
+
+        StringBuilder mykaeli = new StringBuilder("mi");
+        mykaeli.insert(1, "ykael");
+        System.out.println(mykaeli);
+
+
+        StringBuilder numero = new StringBuilder("02468");
+        numero.insert(1,1);
+        numero.insert(3,3);
+        numero.insert(5,5);
+        numero.insert(7,7);
+        numero.insert(9,10);
+
+        System.out.println(numero);
+
+        StringBuilder poema = new StringBuilder("pedra");
+        poema.insert(0,"Tinha ");
+        poema.insert(6,"uma ");
+        poema.insert(15," no");
+        poema.insert(18," meu");
+        poema.insert(22," caminho");
+
+        System.out.println(poema);
+
     }
 
     private void exemplosDelete() {
