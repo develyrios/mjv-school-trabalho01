@@ -7,8 +7,13 @@ public class Principal {
         ExemploStringJoiner exemploStringJoiner = new ExemploStringJoiner();
 
         //Chamando métodos run
+        System.out.println("Exemplos de String:");
         exemploString.run();
+
+        System.out.println("\nExemplos de StringBuilder:");
         exemploStringBuilder.run();
+
+        System.out.println("\nExemplos de StringJoiner:");
         exemploStringJoiner.run();
     }
-}
+}   
