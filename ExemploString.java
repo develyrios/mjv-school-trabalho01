@@ -38,7 +38,7 @@ public class ExemploString {
 
 			//logo, com nosso comando, puxamos a substring para a possição 7
 
-			System.out.println(agencia);
+			System.out.println("numero de agência é: "+ agencia);
 
 			/*agora, queremos identificar qual o numero da conta da nossa contaCorrente. se utilizarmos o mesmo comando
 			substring que utilizamos antes, ele vai retornar o valor completo da String. Para evitar isso, especificamos
@@ -46,7 +46,7 @@ public class ExemploString {
 			 */
 			String conta = contaCorrente.substring(0,4);
 
-			System.out.println(conta);
+			System.out.println("numero de conta é: " + conta);
 
 		}
 
