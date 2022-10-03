@@ -8,7 +8,7 @@ public class ExemploStringBuilder {
 
     private void exemplosAppend() {
         // Como ser criada com uma String
-        StringBuilder drummond = new StringBuilder("Havia ");
+        StringBuilder drummond = new StringBuilder("Tinha ");
 
         // O método append permite permite adicionar uma String no final
         drummond.append("uma pedra no ");
