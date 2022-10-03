@@ -1,4 +1,6 @@
 public class ExemploString {
+	// A classe String está no pacote Java.lang, e foi implementado na versão JDK 1.0
+
 	void run() {
 		this.contarCaracteres();
 		this.exemplosSubstring();
@@ -20,33 +22,51 @@ public class ExemploString {
 
 		void exemplosSubstring() {
 
-			/*
-			o metodo substring é um metodo sobrecarregado que avalia uma variavel e retorna uma nova string que está dentro
-			da primeira string avaliada. A substring gerada começa com a posição do char especificado pelo comando,
-			e segue até o final da string original.
+			/* Exemplo 1 - Explicação:
+
+			o metodo substring é um metodo sobrecarregado que avalia uma variavel e retorna uma nova string que está
+			dentro da primeira string avaliada. A substring gerada começa com a posição do char especificado pelo
+			comando, e segue até o final da string original.
 				*/
 
-			// primeiro criamos uma string de uma conta corrente, por exemplo, com agencia e conta:
+			// primeiro criamos a nossa string base:
+
+			String exemplo01 = "exemplo";
+
+			/* agora, vamos criar uma substring a partir da terceira posição da nossa string, contando a primeira
+			posição como 0, a segunda como 1, e assim por diante: */
+
+			String subExemplo = exemplo01.substring(3);
+
+			//nesse caso, nosso retorno será o char na posição 3 e tudo o que vem depois dele
+
+			System.out.println(subExemplo);
+			//retorno: mplo
+
+			/*nós podemos delimitar também, qual o último char queremos da nossa substring.
+			Para isso, inserimos a posição inicial e a posição final que queremos. No caso, 0 e 2
+			 */
+			String subExemplo02 = exemplo01.substring(0,2);
+			// nesse caso, nosso retorno será uma string da posição 0 até a posição 2
+
+			System.out.println(subExemplo02);
+			// retorno: exe
+
+
+			//Exemplo 2 - Conta corrente
+
 			String contaCorrente = "12345-67";
-
-			//agora, queremos identificar qual a agencia dessa conta. No caso, os dois ultimos numeros da nossa variavel
 			String agencia = contaCorrente.substring(6);
-
-			/*assim, queremos os numeros que ocupam as posições 6 e 7 da nossa string (contamos 0, 1, 2, 3... até a posição
-			que queremos, lembrando de contar o hífen também)
-			 */
-
-			//logo, com nosso comando, puxamos a substring para a possição 7
-
 			System.out.println("numero de agência é: "+ agencia);
-
-			/*agora, queremos identificar qual o numero da conta da nossa contaCorrente. se utilizarmos o mesmo comando
-			substring que utilizamos antes, ele vai retornar o valor completo da String. Para evitar isso, especificamos
-			qual o intervalo de caracteres que queremos retornar. No caso, 0 e 4, e usamos o método substring.
-			 */
 			String conta = contaCorrente.substring(0,4);
-
 			System.out.println("numero de conta é: " + conta);
+
+			/* retorno:
+
+			Sua agência é: 67
+			Sua conta é: 12345
+
+			 */
 
 		}
 
