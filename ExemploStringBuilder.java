@@ -90,6 +90,8 @@ public class ExemploStringBuilder {
     }
 
     private void exemplosDelete() {
-        // Vago
+        // O metodo delete permite remover uma parte de uma string apartir de um alcance ou com um caracter em uma posição especifica
+        StringBuilder conta = new StringBuilder("12 + 2 = erro404");
+        // Lucas Vicente
     }
 }
