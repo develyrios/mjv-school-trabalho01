@@ -1,5 +1,5 @@
 public class ExemploString {
-    void run () {
-        //Inicie o exemplo aqui
+    int void contarCaracteres(String texto) {
+        return texto.length();
     }
 }
