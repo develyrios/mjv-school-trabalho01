@@ -93,5 +93,8 @@ public class ExemploStringBuilder {
         // O metodo delete permite remover uma parte de uma string apartir de um alcance ou com um caracter em uma posição especifica
         StringBuilder conta = new StringBuilder("12 + 2 = erro404");
         // Lucas Vicente
+        conta.deleteCharAt(0); // excluir primeira posicao
+        conta.delete(8,14);    // exclui o erro40
+        System.out.println(conta);
     }
 }
