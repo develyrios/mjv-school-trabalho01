@@ -28,35 +28,35 @@ public class ExemploStringBuilder {
         System.out.println(drummond);
 
         // Porém a vantagem de usar o StringBuilder é poder trabalhar com dados além de texto como números e Boolean
-        StringBuilder conta = new StringBuilder();
+        StringBuilder tiposDeNumeros = new StringBuilder();
 
         // Como int
         int inteiro = 10;
-        conta.append("int: ");
-        conta.append(inteiro);
+        tiposDeNumeros.append("int: ");
+        tiposDeNumeros.append(inteiro);
 
         // Ou float
         float flutuante = 2;
-        conta.append(" float: ");
-        conta.append(flutuante);
+        tiposDeNumeros.append(" float: ");
+        tiposDeNumeros.append(flutuante);
 
         // Ou double
         double dobrado = 2.5;
-        conta.append(" double: ");
-        conta.append(dobrado);
+        tiposDeNumeros.append(" double: ");
+        tiposDeNumeros.append(dobrado);
 
         // Ou long
         double longo = 1000000;
-        conta.append(" long: ");
-        conta.append(longo);
+        tiposDeNumeros.append(" long: ");
+        tiposDeNumeros.append(longo);
 
         // E até mesmo boolean
         boolean booleano = false;
-        conta.append(" boolean: ");
-        conta.append(booleano);
+        tiposDeNumeros.append(" boolean: ");
+        tiposDeNumeros.append(booleano);
 
         // Resultado
-        System.out.println(conta);
+        System.out.println(tiposDeNumeros);
 
         // Outros possíveis exemplos seria sua interação com objetos e StringBuffer
     }
