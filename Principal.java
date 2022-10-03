@@ -7,7 +7,9 @@ public class Principal {
         ExemploStringJoiner exemploStringJoiner = new ExemploStringJoiner();
 
         //Chamando métodos run
-        exemploString.run();
+        exemploString.contarCaracteres("email@teste.com");
+        // para demonstração
+        //System.out.println(exemploString.contarCaracteres("email@teste.com"));
         exemploStringBuilder.run();
         exemploStringJoiner.run();
     }
